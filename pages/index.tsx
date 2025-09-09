@@ -1,11 +1,12 @@
-import Navbar from '../components/Navbar';
-import MovieCard from '../components/MovieCard';
+import React from 'react';
+import Header from '../components/Header';
+import MainContent from "../components/MainContent";
+
 export default function Home(){
-  const appName = 'MovieCatalog';
   return(
     <div>
-      <Navbar name={appName}/>
-      <MovieCard/>
+      <Header/>
+      <MainContent title='This is a title' content='Lorem Ipsum'/>
     </div>
-  );
+  )
 }
